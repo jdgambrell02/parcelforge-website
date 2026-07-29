@@ -581,6 +581,10 @@
   .roi-stat span{font-size:12px;color:#8593ab;margin-top:3px;display:block;}
   .roi-bridge{position:relative;text-align:center;margin-top:26px;font-size:14.5px;color:var(--slate-600);}
   .roi-bridge b{color:var(--green);font-weight:600;}
+  .stance{max-width:760px;margin:44px auto 0;text-align:center;border-top:1px solid var(--line);padding-top:38px;}
+  .stance .lead{font-family:var(--font-display);font-weight:700;font-size:clamp(19px,2.2vw,25px);color:var(--navy);line-height:1.35;letter-spacing:-.01em;}
+  .stance .body{font-size:16px;color:var(--slate-600);margin-top:14px;line-height:1.62;}
+  .stance .body b{color:var(--navy);font-weight:600;}
 
   /* ---------- why mississippi ---------- */
   .band-whyms{background:var(--light);border-top:1px solid var(--line);}
@@ -872,8 +876,8 @@
         <div class="roi-field">
           <div class="lab"><span>Plan</span></div>
           <div class="roi-seg" id="roiPlan">
-            <button data-base="99" data-per="10" data-incl="5" data-unit="abstract" data-vol="Abstracts per month">Abstractor</button>
-            <button data-base="199" data-per="35" data-incl="0" data-unit="property processed" data-vol="Properties per month" class="active">Legal</button>
+            <button data-base="99" data-per="15" data-incl="5" data-unit="property processed" data-vol="Properties per month">Solo Abstractor</button>
+            <button data-base="199" data-per="35" data-incl="0" data-unit="property processed" data-vol="Properties per month" class="active">Solo Legal</button>
             <button data-base="399" data-per="25" data-incl="0" data-unit="property processed" data-vol="Properties per month">Professional</button>
             <button data-base="799" data-per="15" data-incl="0" data-unit="property processed" data-vol="Properties per month">Business</button>
           </div>
@@ -904,7 +908,11 @@
         </div>
       </div>
     </div>
-    <div class="roi-bridge reveal" id="roiBridge">At the Legal plan, every $1 spent on TitleCure returns about <b>$12 in labor saved.</b></div>
+    <div class="roi-bridge reveal" id="roiBridge">At the Solo Legal plan, every $1 spent on TitleCure returns about <b>$12 in labor saved.</b></div>
+    <div class="stance reveal">
+      <p class="lead">TitleCure AI isn't here to replace experienced abstractors and title professionals.</p>
+      <p class="body">It's here to eliminate the thousands of hours spent gathering information, so those professionals can spend more time <b>applying their expertise where it matters most.</b></p>
+    </div>
   </div>
 </section>
 
@@ -1435,55 +1443,55 @@
     <div class="sec-head center reveal">
       <span class="eyebrow" style="justify-content:center;"><span class="dot"></span>Pricing</span>
       <h2>A monthly base plus per-property usage.</h2>
-      <p>Every plan includes all eight modules and all 82 counties. Plans differ by the roles they unlock, the users included, and the per-property rate — which drops as your volume grows.</p>
+      <p>Every plan includes all eight modules and all 82 counties, and is billed by named users. A property search stays valid for 60 days — re-work inside that window is never re-billed.</p>
     </div>
     <div class="price-grid">
       <div class="price-card reveal">
-        <div class="price-name">Researcher</div>
+        <div class="price-name">Solo Researcher</div>
         <div class="price-amt"><b>$49</b><span>/mo</span></div>
-        <div class="price-per">+ $5 / property search</div>
-        <div class="price-incl">3 searches included</div>
+        <div class="price-per">+ $8 / property</div>
+        <div class="price-incl">1 named user · 3 properties included / mo</div>
         <div class="price-best">Investors, realtors, wholesalers, and acquisition teams running pre-deal diligence.</div>
       </div>
       <div class="price-card reveal">
-        <div class="price-name">Abstractor</div>
+        <div class="price-name">Solo Abstractor</div>
         <div class="price-amt"><b>$99</b><span>/mo</span></div>
-        <div class="price-per">+ $10 / abstract</div>
-        <div class="price-incl">5 abstracts included</div>
+        <div class="price-per">+ $15 / property</div>
+        <div class="price-incl">1 named user · 5 properties included / mo</div>
         <div class="price-best">Independent abstractors and title searchers building chains for attorney clients.</div>
       </div>
       <div class="price-card feat reveal">
-        <div class="price-name">Legal</div>
+        <div class="price-name">Solo Legal</div>
         <div class="price-amt"><b>$199</b><span>/mo</span></div>
-        <div class="price-per">+ $35 / property processed</div>
-        <div class="price-incl">1 user included</div>
+        <div class="price-per">+ $35 / property</div>
+        <div class="price-incl">1 named user · pay per property</div>
         <div class="price-best">Solo attorneys and title professionals who take a file all the way to a legal opinion.</div>
       </div>
       <div class="price-card reveal">
         <div class="price-name">Professional</div>
         <div class="price-amt"><b>$399</b><span>/mo</span></div>
-        <div class="price-per">+ $25 / property processed</div>
-        <div class="price-incl">3 users included</div>
+        <div class="price-per">+ $25 / property</div>
+        <div class="price-incl">3 named users</div>
         <div class="price-best">Title companies and firms running steady volume — a lower per-property rate for the team.</div>
       </div>
       <div class="price-card reveal">
         <div class="price-name">Business</div>
         <div class="price-amt"><b>$799</b><span>/mo</span></div>
-        <div class="price-per">+ $15 / property processed</div>
-        <div class="price-incl">5 users included</div>
-        <div class="price-best">Growing title operations that need the lowest per-property rate and team automation.</div>
+        <div class="price-per">+ $15 / property</div>
+        <div class="price-incl">5 named users</div>
+        <div class="price-best">Growing title operations that need the lowest per-property rate across the team.</div>
       </div>
       <div class="price-card reveal">
         <div class="price-name">Enterprise</div>
         <div class="price-amt"><b>Custom</b></div>
-        <div class="price-per">White label · RBAC · SSO · API</div>
-        <div class="price-incl">Tailored deployment</div>
+        <div class="price-per">SSO · API · White Label</div>
+        <div class="price-incl">Volume tiers · named users per contract</div>
         <div class="price-best">Enterprise title and lending operations with custom security, integration, and branding needs.</div>
       </div>
     </div>
 
     <div class="matrix-wrap reveal">
-      <div class="matrix-cap">What each plan includes</div>
+      <div class="matrix-cap">What each plan can access</div>
       <div class="matrix-scroll">
         <table class="matrix">
           <thead>
@@ -1511,10 +1519,9 @@
             <tr><td class="cap">Legal Opinions</td><td class="n">–</td><td class="n">–</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
             <tr><td class="cap">Curative Approval</td><td class="n">–</td><td class="n">–</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
             <tr><td class="cap">Multiple Users</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
-            <tr><td class="cap">User Management</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="y">✓</td><td class="y">✓</td></tr>
-            <tr><td class="cap">SSO Integration</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="y">✓</td></tr>
-            <tr><td class="cap">API</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="y">✓</td></tr>
-            <tr><td class="cap">White Label Platform</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="y">✓</td></tr>
+            <tr><td class="cap">SSO / SAML</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="y">✓</td></tr>
+            <tr><td class="cap">API &amp; Integrations</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="y">✓</td></tr>
+            <tr><td class="cap">White Label</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="y">✓</td></tr>
           </tbody>
         </table>
       </div>

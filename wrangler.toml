@@ -1,0 +1,6 @@
+name = "parcelforge-website"
+account_id = "f2eed40cb5a2060d1e6e344ff29c7275"
+compatibility_date = "2026-09-10"
+
+[assets]
+directory = "./"
